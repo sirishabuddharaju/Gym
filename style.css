@@ -60,7 +60,13 @@ header{
  body{
         height:100vh; 
         width:auto;
-        background-image: url('background-image.jpg');
+        background:linear-gradient(150deg,#1B242D ,#0E121B);
+        
+   }
+
+   #ma
+   {
+    background-image: url('background-image.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -83,7 +89,7 @@ header{
 #hed{
  width:50vw;
  height:60vh;
- display:flex;
+  display:flex;
  flex-direction: column;
  justify-content: center;
  align-items: flex-start;
@@ -127,13 +133,13 @@ header{
  }
 
 
- #bac{
+ /* #bac{
         background:linear-gradient(150deg,#1B242D ,#0E121B);
         height:auto;
         width:auto;
-        padding:20px;
+       
 
- }
+ } */
 
  #home{  
     display:flex;
@@ -965,11 +971,15 @@ header{
         padding: 12px;
     }
 
-
-
-    .title {
-        font-size: 28px;
+  .title1 {
+        font-size: 3.5vw;
     }
+.title{
+    font-size: 4vw;
+}
+
+      
+
     #cards
     {
         flex-wrap: nowrap;
