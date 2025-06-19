@@ -1023,12 +1023,12 @@ header{
     }
     .butt{
         margin:0px;
-        padding:3px 20px;
+        padding:3px 30px;
         border:green;
     }
 
     .rou>h2 {
-        font-size: 9px;
+        font-size: 12px;
     }
 }
 
@@ -1111,6 +1111,14 @@ header{
 
     .logo>h4 {
         font-size: 2.2vw;
+    }
+    .rou>h2 {
+        font-size: 17px;
+    }
+     .butt{
+        margin:0px;
+        padding:3px 50px;
+        border:green;
     }
 }
 
