@@ -245,12 +245,13 @@ header{
     flex-wrap: wrap;
     margin:20px auto;
     justify-content: center;
-    gap:30px;
+    align-items: center;
+    gap:10px;
      
  }
  .card{
     height:45vh;
-    width:15vw;
+    width:10vw;
     border:2px solid #0E121B;
     display:flex;
     flex-direction: column;
@@ -258,10 +259,10 @@ header{
     box-sizing: border-box;
     align-items: flex-start;
     justify-content: flex-start;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     background-color:rgb(1, 97, 1);
     padding:15px 20px ;
-    box-shadow: 3px 3px 5px rgb(240, 242, 240);
+    box-shadow: 6px 6px 4px rgb(240, 242, 240);
     margin: 20px 15px;
     margin-bottom: 50px;
      transition: transform 0.2s ease;
@@ -285,7 +286,7 @@ header{
     padding:10px;
     font-family: font2;
     font-size: 3vh;
- }
+   }
  .card3>p>strong{
     color:#0E121B;  
     letter-spacing: 1px;
@@ -871,17 +872,25 @@ header{
      
     #cards>.card
     {
-       width: 40vw;
-        height:60vh;
+       width: 28vw;
+        height:77vh;
+        justify-content: center;
+        align-items: center;
+        
     }
     #cards>.card>p{
-        font-size: 80%;
+        font-size: 70%;
         line-height: 5vh;
      
     }
     #cards>.card>h3
     {
-        font-size:90%;
+        font-size:5vh;
+    }
+
+    #cards>.card>p>strong
+    {
+        font-size:4vh;
     }
 
     .cards
@@ -961,26 +970,32 @@ header{
     .title {
         font-size: 28px;
     }
+    #cards
+    {
+        flex-wrap: nowrap;
+        gap:5px;
+    }
    #cards>.card
     {
-       width: 27vw;
-        height:60vh;
+       width: 20vw;
+        height:55vh;
     }
     #cards>.card>p
      {
-        font-size: 70%;
-        line-height: 5vh;
+        font-size: 3vh;
+        line-height: 4vh;
               
    }
    #cards>.card>h3
    {
-     font-size:13px;
+     font-size:4vh;
      letter-spacing: 0.1vh;
+     padding:10px;
    }
    
    #cards>.card strong
     {
-    font-size:13px;
+    font-size:4vh;
    }
     .cards {
         width: 20%;
@@ -1016,6 +1031,90 @@ header{
         font-size: 9px;
     }
 }
+
+/* Laptop Devices: 1025px - 1440px */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        font-size: 17px;
+    }
+
+    .title {
+        font-size: 3vw;
+    }
+
+    .cards {
+        width: 25vw;
+        height: 65vh;
+    }
+
+    .cards2 {
+        width: 28vw;
+        height: 68vh;
+    }
+
+    .cards>h3 {
+        font-size: 4vh;
+        letter-spacing: 0.5vh;
+    }
+
+    .cards>p {
+        font-size: 2.8vh;
+    }
+
+    .form1>form {
+        width: 30vw;
+        padding: 25px;
+    }
+
+    #inp>input,
+    #inp>textarea {
+        width: 25vw;
+        height: 8vh;
+    }
+
+    #cards>.card {
+        width: 20vw;
+        height: 50vh;
+    }
+
+    #cards>.card>p {
+        font-size: 3vh;
+        line-height: 4vh;
+    }
+     #cards>.card>p>strong {
+        font-size: 4vh;
+        line-height: 3.5vh;
+    }
+     #cards>.card>h3 {
+        font-size: 3.5vh;
+        line-height: 3.5vh;
+        letter-spacing: 1px;
+        margin-bottom:10px;
+    }
+
+    .title1 {
+        font-size: 2.8vw;
+    }
+
+    .para>img {
+        width: 25vw;
+        height: auto;
+    }
+
+    iframe {
+        height: 400px !important;
+    }
+
+    .logo>img {
+        height: 14vh;
+    }
+
+    .logo>h4 {
+        font-size: 2.2vw;
+    }
+}
+
+
 
 
 
