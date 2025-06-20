@@ -581,7 +581,7 @@ header{
   }
 
   .child>p {
-    font-size: 5vh;
+    font-size: 3.5vh;
     margin: 5px;
   }
 
@@ -591,11 +591,11 @@ header{
     margin-bottom: 50px;
   }
   .butt p{
-    font-size: smaller;
+    font-size: small;
   }
   .but p
   {
-    font-size: smaller;
+    font-size: small;
   }
 
 
@@ -614,7 +614,7 @@ header{
   }
 
   .about>p {
-    font-size: 4vh;
+    font-size: 3.5vh;
     text-align: center;
   }
 
@@ -637,7 +637,7 @@ header{
 
 
   #cards .card>p {
-    font-size: 3.5vh;
+    font-size: 3vh;
     line-height: 5vh;
   }
 
