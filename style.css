@@ -278,7 +278,7 @@ header{
 
  .card:hover
  {
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
  }
  .card>p{
@@ -512,8 +512,8 @@ header{
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
-        gap:30px;
-        margin:50px;
+        gap:10px;
+        margin:20px;
     }
 
 
@@ -535,6 +535,7 @@ header{
         font-size: larger;
         font-weight: 10px;
         color:white;
+        text-align: center;
            }
     .menu>a:hover{
         color:rgb(49, 113, 49);
@@ -552,202 +553,6 @@ header{
     }
 
 
-  /* Extra Small Devices (Mobile Phones, Portrait) */
-@media (max-width: 575.98px) {
-    header {
-        display: none; 
-    }
-
-    .logo {
-        margin-bottom: 10px;
-    }
-
-    .logo>img {
-        height: 10vh;
-    }
-
-    .logo>h4 {
-        font-size: 5vw;
-    }
-
-    .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .menu>a {
-        display: none; 
-    }
-
-    .title {
-        font-size: 5vw;
-        text-align: center;
-    }
-
-    #hed {
-        width: 90vw;
-        height: auto;
-        align-items: center;
-        text-align: center;
-        margin: 5px auto;
-    }
-
-    .child>p {
-        font-size: 5vh;
-        margin: 5px;
-    }
-
-    .but {
-        padding: 10px 30px;
-        margin: 10px;
-    }
-
-    .but>p {
-        font-size: 3vh;
-    }
-
-    .para {
-        flex-direction: column; 
-        text-align: center;
-    }
-
-    .para>img {
-      display:none;
-    }
-
-    #right>p {
-        font-size: 3vh;
-        margin: 10px;
-    }
-
-    .butt {
-        padding: 8px 20px;
-        margin: 5px auto;
-    }
-
-    .butt>p {
-        font-size: 3vh;
-    }
-
-    .about>p {
-        font-size: 4vh;
-        text-align: center;
-    }
-
-    #cards {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 20px;
-    }
-
-    #cards>.card {
-        height: 80vh;
-        width: 30vw;
-        padding: 0px 20px 20px 20px;
-        margin: 5px auto;
-        }
-
-   #cards>.card>p {
-      font-size: 4vh;
-      line-height: 5vh;
-    }
-
-    #cards>.card>h3 {
-        font-size: 5vh;
-    }
-
-    .card3>p>strong {
-        font-size: 4vh;
-    }
-
-    .rou>h2 {
-        font-size: 2vw;
-        text-align: center;
-    }
-
-    .iimg>iframe {
-        height: 40vh;
-        width: 90vw;
-    }
-
-    #flex {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        margin-bottom: 50px;
-        height: auto;
-    }
-
-    .form1>form {
-        width: 70vw;
-        height: auto;
-        padding: 15px;
-        margin: 10px auto;
-        box-shadow: 0px 10px 15px green;
-    }
-
-    #inp>input,
-    #inp>textarea {
-        width: 50vw;
-        height: 15vh;
-        padding: 3px;
-        text-align: center;
-    }
-
-    #con>a>img {
-        height: 6vh;
-        width: 4vw;
-        margin: 2px;
-    }
-
-    .cards1,
-    .cards3 {
-        height: 60vh;
-        width: 20vw;
-        padding: 20px;
-    }
-
-    .cards2 {
-        height: 70vh;
-        width: 30vw;
-        padding: 20px;
-    }
-
-    .title1 {
-        font-size: 6vw;
-        text-align: center;
-    }
-
-    .cards>h3 {
-        font-size: 3vh;
-        letter-spacing:normal;
-    }
-
-    .cards1>p,
-    .cards3>p,
-    .cards2>p {
-        font-size: 3vh;
-        padding: 5px 5px;
-    }
-
-    .del>h3 {
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
-
-    #class>div>p {
-        font-size: small;
-        text-align: center;
-    }
-
-    footer {
-        font-size: 9px;
-        text-align: center;
-        padding: 10px;
-    }
-}
 
 /* Mobile: 0px - 480px (overlapping with extra small, but keeping your original for specific adjustments) */
 @media screen and (max-width: 480px) {
@@ -762,7 +567,7 @@ header{
   }
 
   .title {
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
   }
 
@@ -781,10 +586,18 @@ header{
   }
 
   .but, .butt {
-    padding: 10px 30px;
-    font-size: 14px;
-    margin: 10px auto;
+    padding: 5px 10px;
+    margin: 5px auto;
+    margin-bottom: 50px;
   }
+  .butt p{
+    font-size: smaller;
+  }
+  .but p
+  {
+    font-size: smaller;
+  }
+
 
   .para {
     flex-direction: column;
@@ -809,6 +622,9 @@ header{
   #cards {
     flex-direction: column;
     align-items: center;
+    gap:50px;
+    margin-bottom: 100px;
+    
   }
 
   #cards .card {
@@ -816,7 +632,9 @@ header{
     height: auto;
     padding: 15px;
     margin: 10px 0;
+
   }
+
 
   #cards .card>p {
     font-size: 3.5vh;
@@ -908,7 +726,7 @@ header{
     text-align: center;
   }
    .title {
-    font-size: 8vw;
+    font-size: 10vw;
     text-align: center;
   }
 
@@ -923,6 +741,13 @@ header{
     padding: 10px;
     text-align: center;
   }
+
+  #class>div>img
+   {
+     width:50vw;
+     height:30vh;
+  }
+  
 }
 
 
@@ -990,10 +815,15 @@ header{
         font-size: 24px;
     }
 
-    .para img, .child img, .iimg iframe {
+    .child img, .iimg iframe {
         width: 100%;
         height: auto;
     }
+     .para img
+     {
+        width:40%;
+        height:70vh;
+     }
 
     iframe {
         width: 100% !important;
