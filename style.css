@@ -58,9 +58,12 @@ header{
 }
 
  body{
-        height:100vh; 
+        height:auto; 
         width:auto;
         background:linear-gradient(150deg,#1B242D ,#0E121B);
+         background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         
    }
 
@@ -261,11 +264,10 @@ header{
     border:2px solid #0E121B;
     display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
     box-sizing: border-box;
     align-items: flex-start;
     justify-content: flex-start;
-    /* border-radius: 20px; */
+    border-radius: 20px;
     background-color:rgb(1, 97, 1);
     padding:15px 20px ;
     box-shadow: 6px 6px 4px rgb(240, 242, 240);
@@ -749,115 +751,180 @@ header{
 
 /* Mobile: 0px - 480px (overlapping with extra small, but keeping your original for specific adjustments) */
 @media screen and (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
 
-    header {
-        display: none; 
-    }
-
-    header, nav, .title, .about, .cards, .MonthlyPlans, .specialOffers, #flex, #class {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo h4 {
-        font-size: 18px;
-    }
-
-    nav.menu a {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    .title {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .para img, .iimg iframe, .child img, .cards img {
-        width: 90%;
-        height: auto;
-    }
-    .para{
-        margin-bottom:20px;
-    }
-
-    #cards>.card>p{
-        font-size: 80%;
-        line-height: 4vh;
-
-         }
-
-    #cards>.card {
-        width: 20vw;
-        height: 58vh;
-        margin: 5px 0;
-     
-    }
-     .MonthlyPlans,
-  .specialOffers,
-  .MenbershipPlans {
-    display: flex;
-    flex-direction: row;       
-    justify-content: center;
+  header {
+    display: none;
   }
 
-  .MonthlyPlans .cards,
-  .specialOffers .cards,
-  .MenbershipPlans .cards {
-    width: 90vw;              
+
+  body {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+
+  #hed {
+    width: 90vw;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    margin: 5px auto;
+  }
+
+  .child>p {
+    font-size: 5vh;
+    margin: 5px;
+  }
+
+  .but, .butt {
+    padding: 10px 30px;
+    font-size: 14px;
     margin: 10px auto;
   }
+
+  .para {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .para>img {
+    display: none;
+  }
+
+  #right>p {
+    font-size: 3vh;
+    margin: 10px;
+  }
+
+  .about>p {
+    font-size: 4vh;
+    text-align: center;
+  }
+
+ 
+  #cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #cards .card {
+    width: 80vw;
+    height: auto;
+    padding: 15px;
+    margin: 10px 0;
+  }
+
+  #cards .card>p {
+    font-size: 3.5vh;
+    line-height: 5vh;
+  }
+
+  #cards .card>h3 {
+    font-size: 4vh;
+  }
+
+  .card3>p>strong {
+    font-size: 4vh;
+  }
+
+
+  .form1>form {
+    width: 80vw;
+    padding: 15px;
+    margin: 10px auto;
+    box-shadow: 0px 10px 15px green;
+  }
+
+  #inp>input, #inp>textarea {
+    width: 70vw;
+    height: 10vh;
+    text-align: center;
+  }
+
+  .rou>h2 {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: 200px !important;
+  }
+
+  #flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .child img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  #con>a>img {
+    height: 6vh;
+    width: 6vh;
+    margin: 2px;
+  }
+
+  
+  .MenbershipPlans,
+  .MonthlyPlans,
+  .specialOffers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards {
+    width: 80vw;
+    height: auto;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius:0%;
+  }
+
+  .cards>h3 {
+    font-size: 4vh;
+    letter-spacing: 0.5vh;
+  }
+
+  .cards1>p,
+  .cards3>p,
+  .cards2>p {
+    font-size: 3vh;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .title1 {
+    font-size: 6vw;
+    text-align: center;
+  }
+   .title {
+    font-size: 8vw;
+    text-align: center;
+  }
+
+  .del>h3 {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+  }
 }
-   .cards1,
-    .cards3 {
-        height: 60vh;
-        width: 30vw;
-        padding: 20px;
-    }
 
-    .cards2 {
-        height: 70vh;
-        width: 35vw;
-        padding: 20px;
-    }
-
-    .title1 {
-        font-size: 6vw;
-        text-align: center;
-    }
-
-    .cards>h3 {
-        font-size: 4vh;
-        letter-spacing:0.5vh;
-    }
-
-    .cards1>p,
-    .cards3>p,
-    .cards2>p {
-        font-size: 3vh;
-        padding: 5px 5px;
-    }
-    iframe {
-        width: 100% !important;
-        height: 200px !important;
-    }
-
-    .butt, .but {
-        padding: 8px 12px;
-        font-size: 14px;
-    }
-
-    .child img {
-        width: 100%;
-    }
-
-    form input, form textarea {
-        width: 90%;
-        font-size: 14px;
-    }
 
 /* Tablet: 481px - 768px */
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -878,10 +945,9 @@ header{
      
     #cards>.card
     {
-       width: 28vw;
-        height:77vh;
-        justify-content: center;
-        align-items: center;
+       width: 29vw;
+        height:72vh;
+    ;
         
     }
     #cards>.card>p{
