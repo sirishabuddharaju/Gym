@@ -586,16 +586,16 @@ header{
   }
 
   .but, .butt {
-    padding: 5px 10px;
+    padding: 10px 15px;
     margin: 5px auto;
     margin-bottom: 50px;
   }
   .butt p{
-    font-size: small;
+    font-size: medium;
   }
   .but p
   {
-    font-size: small;
+    font-size: medium;
   }
 
 
@@ -609,12 +609,12 @@ header{
   }
 
   #right>p {
-    font-size: 3vh;
+    font-size: 2.5vh;
     margin: 10px;
   }
 
   .about>p {
-    font-size: 3.5vh;
+    font-size: 3vh;
     text-align: center;
   }
 
